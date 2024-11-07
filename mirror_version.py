@@ -1,3 +1,30 @@
+from libraries.message_printers import *
+
+# MAIN function
+def main():
+    # Print instructions
+    print_header()
+
+    # Loop to catch commands.
+    while True:
+        # Get the command as input.
+        command = input("Command: ")
+
+        # Perform matching operations.
+        match command:
+            case "/t-table":
+                ...
+            case "/min-form":
+                ...
+            case "/help":
+                print_header()
+            case "/info":
+                print_information()
+            case "/exit":
+                break
+            case _:
+                print("Command not found.")
+
 def calculate(equation: str) -> int:
     final_equation = " "
     stack_levels = 0
