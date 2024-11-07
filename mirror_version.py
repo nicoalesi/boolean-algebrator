@@ -113,8 +113,4 @@ def calculate(equation: str) -> int:
     return final_equation
 
 if __name__ == "__main__":
-    expression = input("Expression: ")
-
-    r = calculate(expression)
-
-    print(r)
+    main()

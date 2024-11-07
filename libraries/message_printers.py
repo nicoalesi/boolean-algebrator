@@ -9,7 +9,7 @@ def print_header() -> None:
     print("+-------------------- BOOLEAN CALCULATOR --------------------+")
     print("|                                                            |")
     print("|  Use this program to generate the truth table or           |")
-    print("|  the minimal form of a boolean expression.                 |")
+    print("|  the minimal form of a boolean equation.                   |")
     print("|                                                            |")
     print("|  Commands:                                                 |")
     print("|    /t-table            - Generate the truth table          |")
