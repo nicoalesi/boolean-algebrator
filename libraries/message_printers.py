@@ -21,7 +21,7 @@ def print_header() -> None:
 
 
 # This function prints conversion options
-def print_conversion_option() -> None:
+def print_conversion_modes() -> None:
     print()
 
     print("+-------------------------- MODES ---------------------------+")

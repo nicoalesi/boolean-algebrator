@@ -1,4 +1,4 @@
-# This file contains the truth table and minimal form calculators' functions 
+# This file contains the truth table and minimal form calculators" functions 
 # used by the main program.
 
 # This function takes 
