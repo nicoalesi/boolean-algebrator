@@ -21,7 +21,13 @@ def generate_truth_table(expression: str) -> None:
         values = bin(n)[2:]
         if len(values) < n_vars:
             values = "0" * (n_vars - len(values)) + values
-        print("|" + values.replace("", " ") + "|")
+        
+        temp_expression = expression
+        for i in range(len(variables)):
+            temp_expression = temp_expression.replace(variables[i], values[i])
+        result = str(int(eval(temp_expression)))
+
+        print("|" + values.replace("", " ") + "| " + result + " |")
     print("+" + "-" * table_width + "+---+")
 
 
@@ -70,7 +76,7 @@ def convert_symbols_and_get_variables(equation: str) -> (str, list):
             continue
 
         if char not in ["+", "'"] and char not in variables:
-            variables.append(char.upper())
+            variables.append(char)
 
         if stack_levels:
             match char:
@@ -106,8 +112,8 @@ def convert_symbols_and_get_variables(equation: str) -> (str, list):
                     else:
                         final_equation = final_equation + " and " + char
 
-    if equation[0] not in ["+", "'"] and equation[0] not in variables:
-        variables.append(equation[0].upper())
+    if equation[0] not in ["+", "'", "(", "[", "{"] and equation[0] not in variables:
+        variables.append(equation[0])
 
     if equation[0] in ["(", "[", "{"]:
         parentheses_stack[-1] += parentheses[equation[0]]

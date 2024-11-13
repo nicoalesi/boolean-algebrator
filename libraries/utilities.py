@@ -12,7 +12,7 @@ __all__ = [
 # This function manages the choice of the conversion mode
 def choose_conversion_mode():
     print_conversion_modes()
-    expression = input("Expression: ")
+    expression = input("Expression: ").upper()
     mode = input("Mode: ")
 
     match mode:
