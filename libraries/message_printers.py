@@ -26,7 +26,8 @@ def print_conversion_modes() -> None:
 
     print("+-------------------------- MODES ---------------------------+")
     print("|                                                            |")
-    print("|  Choose the conversion mode.                               |")
+    print("|  Write the boolean expression without any space and        |")
+    print("|  choose the conversion mode.                               |")
     print("|                                                            |")
     print("|  Modes:                                                    |")
     print("|    [1] Truth table           - Generate the truth table    |")
