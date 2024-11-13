@@ -1,4 +1,4 @@
-from libraries.message_printers import *
+# from libraries.message_printers import *
 
 # MAIN function
 def main():
@@ -12,8 +12,9 @@ def main():
 
         # Perform matching operations.
         match command:
-            case "/t-table":
-                ...
+            case "convert":
+                expression = input("Expression: ")
+                calculate_truth_table()
             case "/min-form":
                 ...
             case "/help":

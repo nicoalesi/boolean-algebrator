@@ -12,15 +12,30 @@ def print_header() -> None:
     print("|  the minimal form of a boolean equation.                   |")
     print("|                                                            |")
     print("|  Commands:                                                 |")
-    print("|    /t-table            - Generate the truth table          |")
-    print("|    /min-form           - Generate the minimal form         |")
+    print("|    /convert            - Convert a boolean expression      |")
     print("|    /help               - Print this message again          |")
     print("|    /info               - Print information                 |")
     print("|    /exit               - Exit the program                  |")
     print("|                                                            |")
     print("+------------------------------------------------------------+")
 
-# This function print information about the project
+
+# This function prints conversion options
+def print_conversion_option() -> None:
+    print()
+
+    print("+-------------------------- MODES ---------------------------+")
+    print("|                                                            |")
+    print("|  Choose the conversion mode.                               |")
+    print("|                                                            |")
+    print("|  Modes:                                                    |")
+    print("|    [1] Truth table           - Generate the truth table    |")
+    print("|    [2] Minimal form          - Generate the minimal form   |")
+    print("|    [3] Both                  - Generate both the results   |")
+    print("|                                                            |")
+    print("+------------------------------------------------------------+")
+
+# This function prints information about the project
 def print_information() -> None:
     print()
 
