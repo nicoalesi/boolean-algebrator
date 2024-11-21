@@ -37,7 +37,13 @@ def generate_truth_table(expression: str) -> None:
     
     # Convert the string to an executable string and obtain the list
     # of all the unique variables used in it, sorted alphabetically.
-    variables, expression = convert_symbols_and_get_variables(expression)
+
+    # Handle both if there are format errors or an unexpected problem occurs.
+    try:
+        variables, expression = convert_symbols_and_get_variables(expression)
+    except:
+        print("Error.")
+        return
     # Calculate the number of variables and the table's width.
     n_vars = len(variables)
     table_width = 2*(n_vars) + 1
