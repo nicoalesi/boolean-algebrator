@@ -1,20 +1,20 @@
+from libraries.calculators import start_generation
 from libraries.message_printers import print_header, print_information
-from libraries.utilities import *
 
-# MAIN function
-def main():
-    # Print instructions
+# MAIN function.
+def main() -> None:
+    # Print instructions.
     print_header()
 
-    # Loop to catch commands
+    # Loop to catch commands.
     while True:
-        # Get the command as input
+        # Get the command as input.
         command = input("Command: ")
 
-        # Perform matching operations
+        # Perform matching operations.
         match command:
-            case "/convert":
-                choose_conversion_mode()
+            case "/generate":
+                start_generation()
             case "/help":
                 print_header()
             case "/info":

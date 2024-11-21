@@ -8,11 +8,11 @@ def print_header() -> None:
 
     print("+-------------------- BOOLEAN CALCULATOR --------------------+")
     print("|                                                            |")
-    print("|  Use this program to generate the truth table or           |")
-    print("|  the minimal form of a boolean equation.                   |")
+    print("|  Use this program to generate the truth table of           |")
+    print("|  a boolean equation.                                       |")
     print("|                                                            |")
     print("|  Commands:                                                 |")
-    print("|    /convert            - Convert a boolean expression      |")
+    print("|    /generate           - Generate the truth table          |")
     print("|    /help               - Print this message again          |")
     print("|    /info               - Print information                 |")
     print("|    /exit               - Exit the program                  |")
@@ -20,25 +20,24 @@ def print_header() -> None:
     print("+------------------------------------------------------------+")
 
 
-# This function prints conversion options
-def print_conversion_modes() -> None:
+# This function prints syntax rules and usage information.
+def print_syntax_information() -> None:
     print()
 
-    print("+-------------------------- MODES ---------------------------+")
+    print("+----------------------- SYNTAX INFO ------------------------+")
     print("|                                                            |")
-    print("|  Write the boolean expression without any space and        |")
-    print("|  choose the conversion mode.                               |")
+    print("|  Write the boolean expression without any space.           |")
+    print("|  Note: Only letters, boolean operations and                |")
+    print("|  parentheses '( )' are allowed.                            |")
     print("|                                                            |")
-    print("|  Note: Only parentheses are allowed - ( )                  |")
-    print("|                                                            |")
-    print("|  Modes:                                                    |")
-    print("|    [1] Truth table           - Generate the truth table    |")
-    print("|    [2] Minimal form          - Generate the minimal form   |")
-    print("|    [3] Both                  - Generate both the results   |")
+    print("|  Operators:                                                |")
+    print("|    NOT:   - single quote           not A    <->  A'        |")
+    print("|    AND:   - multiplication         A and B  <->  AB        |")
+    print("|    OR:    - addition               A or B   <->  A+B       |")
     print("|                                                            |")
     print("+------------------------------------------------------------+")
 
-# This function prints information about the project
+# This function prints information about the project.
 def print_information() -> None:
     print()
 
