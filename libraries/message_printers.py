@@ -29,6 +29,8 @@ def print_conversion_modes() -> None:
     print("|  Write the boolean expression without any space and        |")
     print("|  choose the conversion mode.                               |")
     print("|                                                            |")
+    print("|  Note: Only parentheses are allowed - ( )                  |")
+    print("|                                                            |")
     print("|  Modes:                                                    |")
     print("|    [1] Truth table           - Generate the truth table    |")
     print("|    [2] Minimal form          - Generate the minimal form   |")
